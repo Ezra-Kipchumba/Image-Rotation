@@ -26,4 +26,21 @@ body {
 .box span{
     border: 1px solid white;
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--1) +45deg)) translateZ(400px);
+    -webkit-box-reflect: below 5px
+    linear-gradient(transparent, transparent, #0004);
+}
+.box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
